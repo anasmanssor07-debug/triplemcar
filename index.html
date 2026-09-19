@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triple M Car - Location de Voitures Ouarzazate</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <header class="top-contact-bar">
+        <div class="contact-info">
+            <span>✉️ Email : <a href="mailto:triplemcar@gmail.com">triplemcar@gmail.com</a></span>
+            <span>📞 Tél : <a href="tel:0662530124">06 62 53 01 24</a> | <a href="tel:0524887368">05 24 88 73 68</a></span>
+        </div>
+    </header>
+
+
+    <section class="landing-page" id="home">
+        <div class="landing-content">
+            <div class="badge">TRIPLE M CAR - OUARZAZATE</div>
+            <h1>Louez la voiture idéale pour explorer le désert</h1>
+            <p>Service gratuit à l'Aéroport de Ouarzazate, réservation directe sur WhatsApp.</p>
+            <div class="hero-buttons">
+                <button class="btn-main" id="btn-show-cars">Réserver votre voiture ➔</button>
+                <a href="#services-sec" class="btn-secondary">⚙️ Nos Services</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services-section" id="services-sec">
+        <div class="section-header">
+            <h2>Nos Services de Location</h2>
+            <p>Tout ce dont vous avez besoin pour un voyage sans soucis</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-box">
+                <div class="service-icon">✈️</div>
+                <h3>Livraison Aéroport Ouarzazate</h3>
+                <p>Nous vous livrons et récupérons le véhicule gratuitement à l'aéroport de Ouarzazate dès votre arrivée.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-icon">🛠️</div>
+                <h3>Assistance 24h/24 & 7j/7</h3>
+                <p>Une équipe réactive à votre disposition sur toute la région pour vous garantir un voyage serein.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-icon">👶</div>
+                <h3>Équipements & Siège Bébé</h3>
+                <p>Sièges auto disponibles sur demande pour vos trajets en famille en toute sécurité.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cars-section hidden" id="catalogue">
+        <header class="section-header">
+            <h2>Nos Véhicules Disponibles</h2>
+            <p>Choisissez vos dates, votre véhicule et réservez sur WhatsApp</p>
+        </header>
+
+        <div class="cars-grid">
+
+           
+            <div class="car-card">
+                <div class="car-badge">300 DH / jour</div>
+                <div class="car-image-container">
+                    <img src="c:\Users\Admin\Desktop\projet abdee\imagepeugeot.jpg.jpeg" alt="Peugeot 208" class="car-img">
+                </div>
+                <h3>Peugeot 208</h3>
+                <ul class="quick-specs">
+                    <li>🚪 5 Portes</li>
+                    <li>🧳 5 Valises</li>
+                    <li>❄️ Climatisation</li>
+                    <li>⚙️ Boîte Manuelle</li>
+                    <li>⛽ Diesel</li>
+                </ul>
+                <div class="date-picker-box">
+                    <label>Du :</label>
+                    <input type="date" class="date-start" id="start-p208">
+                    <label>Au :</label>
+                    <input type="date" class="date-end" id="end-p208">
+                </div>
+                <div class="card-buttons">
+                    <a href="detail.html?voiture=Peugeot%20208&prix=300%20DH%20(28%20%E2%82%AC)&img=imagepeugeot.jpg" class="btn-details">Détails</a>
+                    <button class="btn-whatsapp" onclick="reserverWhatsApp('Peugeot 208', '300 DH ', 'start-p208', 'end-p208')">Réserver</button>
+                </div>
+            </div>
+
+       
+            <div class="car-card">
+                <div class="car-badge">300 DH / jour </div>
+                <div class="car-image-container">
+                    <img src="c:\Users\Admin\Desktop\projet abdee\NouvelleDaciaLogan.jpg.jpeg" alt="Nouvelle Dacia Logan" class="car-img">
+                </div>
+                <h3>Nouvelle Dacia Logan</h3>
+                <ul class="quick-specs">
+                    <li>🚪 5 Portes</li>
+                    <li>🧳 5 Valises</li>
+                    <li>❄️ Climatisation</li>
+                    <li>⚙️ Boîte Manuelle</li>
+                    <li>⛽ Diesel</li>
+                </ul>
+                <div class="date-picker-box">
+                    <label>Du :</label>
+                    <input type="date" class="date-start" id="start-nlogan">
+                    <label>Au :</label>
+                    <input type="date" class="date-end" id="end-nlogan">
+                </div>
+                <div class="card-buttons">
+                    <a href="detail.html?voiture=Nouvelle%20Dacia%20Logan&prix=300%20DH%20(28%20%E2%82%AC)&img=NouvelleDaciaLogan.jpg" class="btn-details">Détails</a>
+                    <button class="btn-whatsapp" onclick="reserverWhatsApp('Nouvelle Dacia Logan', '300 DH', 'start-nlogan', 'end-nlogan')">Réserver</button>
+                </div>
+            </div>
+
+           
+            <div class="car-card highlight">
+                <div class="car-badge price-premium">400 DH / jour</div>
+                <div class="car-image-container">
+                    <img src="c:\Users\Admin\Desktop\projet abdee\NouvelleDaciaduster.jpg.jpeg" alt="Nouvelle Dacia Duster" class="car-img">
+                </div>
+                <h3>Nouvelle Dacia Duster</h3>
+                <ul class="quick-specs">
+                    <li>🚪 5 Portes</li>
+                    <li>🧳 5 Valises</li>
+                    <li>❄️ Climatisation</li>
+                    <li>⚙️ Boîte Manuelle</li>
+                    <li>⛽ Diesel</li>
+                </ul>
+                <div class="date-picker-box">
+                    <label>Du :</label>
+                    <input type="date" class="date-start" id="start-nduster">
+                    <label>Au :</label>
+                    <input type="date" class="date-end" id="end-nduster">
+                </div>
+                <div class="card-buttons">
+                    <a href="detail.html?voiture=Nouvelle%20Dacia%20Duster&prix=400%20DH&img=NouvelleDaciaduster.jpg" class="btn-details">Détails</a>
+                    <button class="btn-whatsapp" onclick="reserverWhatsApp('Nouvelle Dacia Duster', '400 DH', 'start-nduster', 'end-nduster')">Réserver</button>
+                </div>
+            </div>
+
+      
+            <div class="car-card">
+                <div class="car-badge">300 DH / jour </div>
+                <div class="car-image-container">
+                    <img src="c:\Users\Admin\Desktop\projet abdee\DaciaDuster.jpg.jpeg" alt="Dacia Duster" class="car-img">
+                </div>
+                <h3>Dacia Duster</h3>
+                <ul class="quick-specs">
+                    <li>🚪 5 Portes</li>
+                    <li>🧳 5 Valises</li>
+                    <li>❄️ Climatisation</li>
+                    <li>⚙️ Boîte Manuelle</li>
+                    <li>⛽ Diesel</li>
+                </ul>
+                <div class="date-picker-box">
+                    <label>Du :</label>
+                    <input type="date" class="date-start" id="start-duster">
+                    <label>Au :</label>
+                    <input type="date" class="date-end" id="end-duster">
+                </div>
+                <div class="card-buttons">
+                    <a href="detail.html?voiture=Dacia%20Duster&prix=300%20DH%20(28%20%E2%82%AC)&img=DaciaDuster.jpg" class="btn-details">Détails</a>
+                    <button class="btn-whatsapp" onclick="reserverWhatsApp('Dacia Duster', '300 DH ', 'start-duster', 'end-duster')">Réserver</button>
+                </div>
+            </div>
+
+       
+            <div class="car-card">
+                <div class="car-badge">300 DH / jour</div>
+                <div class="car-image-container">
+                    <img src="c:\Users\Admin\Desktop\projet abdee\DaciaSandero.jpg.jpeg" alt="Dacia Sandero" class="car-img">
+                </div>
+                <h3>Dacia Sandero</h3>
+                <ul class="quick-specs">
+                    <li>🚪 5 Portes</li>
+                    <li>🧳 5 Valises</li>
+                    <li>❄️ Climatisation</li>
+                    <li>⚙️ Boîte Manuelle</li>
+                    <li>⛽ Diesel</li>
+                </ul>
+                <div class="date-picker-box">
+                    <label>Du :</label>
+                    <input type="date" class="date-start" id="start-sandero">
+                    <label>Au :</label>
+                    <input type="date" class="date-end" id="end-sandero">
+                </div>
+                <div class="card-buttons">
+                    <a href="detail.html?voiture=Dacia%20Sandero&prix=300%20DH%20(28%20%E2%82%AC)&img=DaciaSandero.jpg" class="btn-details">Détails</a>
+                    <button class="btn-whatsapp" onclick="reserverWhatsApp('Dacia Sandero', '300 DH ', 'start-sandero', 'end-sandero')">Réserver</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="ouarzazate-section">
+        <header class="section-header">
+            <h2>🇲🇦 Découvrir Ouarzazate & Le Grand Sud Marocain</h2>
+            <p>Ouarzazate est le point de départ idéal pour explorer le désert de Zagora, les dunes de Merzouga et les magnifiques vallées du Sud au volant de nos voitures.</p>
+        </header>
+
+        <div class="ouarzazate-grid">
+            
+
+            <div class="ouarzazate-card">
+                <div class="ouarzazate-img-container">
+                    <img src="c:\Users\Admin\Desktop\projet abdee\ait-benhaddou.jpg.jpeg" alt="Kasbah Ait Benhaddou Ouarzazate">
+                </div>
+                <div class="ouarzazate-info">
+                    <h3>🏛️ Ksar Aït Ben Haddou</h3>
+                    <p>À 30 km de Ouarzazate, visitez le plus célèbre village fortifié en terre ocre, classé au patrimoine mondial de l'UNESCO.</p>
+                </div>
+            </div>
+
+
+            <div class="ouarzazate-card">
+                <div class="ouarzazate-img-container">
+                    <img src="c:\Users\Admin\Desktop\projet abdee\taourirt.jpg.jpeg" alt="Kasbah de Taourirt Ouarzazate">
+                </div>
+                <div class="ouarzazate-info">
+                    <h3>🏰 Kasbah de Taourirt</h3>
+                    <p>Au cœur de la ville, explorez l'ancienne demeure du Pacha Glaoui, un chef-d'œuvre architectural berbère traditionnel.</p>
+                </div>
+            </div>
+
+  
+            <div class="ouarzazate-card">
+                <div class="ouarzazate-img-container">
+                    <img src="c:\Users\Admin\Desktop\projet abdee\Atlas_Corporation_Studios.jpg.jpeg" alt="Atlas Corporation Studios Ouarzazate">
+                </div>
+                <div class="ouarzazate-info">
+                    <h3>🎬 Atlas Corporation Studios</h3>
+                    <p>Plongez dans l'univers d'Hollywood au Maroc et découvrez les décors de films mythiques comme *Gladiator* et *La Momie*.</p>
+                </div>
+            </div>
+
+   
+            <div class="ouarzazate-card">
+                <div class="ouarzazate-img-container">
+                    <img src="c:\Users\Admin\Desktop\projet abdee\Zagora&ValléeduDraa.jpg.jpeg" alt="Zagora et Vallée du Draa">
+                </div>
+                <div class="ouarzazate-info">
+                    <h3>🌴 Zagora & Vallée du Draa</h3>
+                    <p>Sillonnez la plus grande palmeraie du Maroc le long de la vallée du Draa jusqu'à Zagora et les portes du désert à M'hamid.</p>
+                </div>
+            </div>
+
+
+            <div class="ouarzazate-card">
+                <div class="ouarzazate-img-container">
+                    <img src="c:\Users\Admin\Desktop\projet abdee\Merzouga&ErgChebbi.jpg.jpeg" alt="Dunes de Merzouga Erg Chebbi">
+                </div>
+                <div class="ouarzazate-info">
+                    <h3>🏜️ Merzouga & Erg Chebbi</h3>
+                    <p>Conduisez jusqu'aux spectaculaires dunes de sable doré d'Erg Chebbi à Merzouga pour vivre un coucher de soleil inoubliable.</p>
+                </div>
+            </div>
+
+
+            <div class="ouarzazate-card">
+                <div class="ouarzazate-img-container">
+                    <img src="c:\Users\Admin\Desktop\projet abdee\GorgesduDadès&Todra.jpg.jpeg" alt="Gorges du Dadès et Todra">
+                </div>
+                <div class="ouarzazate-info">
+                    <h3>⛰️ Gorges du Dadès & Todra</h3>
+                    <p>Montez les lacets spectaculaires de la vallée du Dadès et admirez les impressionnantes falaises des Gorges du Todra.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="map-section" id="location-sec">
+        <div class="map-header">
+            <h2>📍 Notre Emplacement</h2>
+            <p>525 Hay El Wahda, Ouarzazate 45000, Maroc</p>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://maps.google.com/maps?q=525%20Hay%20El%20Wahda,%20Ouarzazate%2045000&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        <div class="map-action">
+            <a href="https://www.google.com/maps/search/?api=1&query=triplemcar525+Hay+El+Wahda,+Ouarzazate+45000" target="_blank" class="btn-maps">
+                📍 Ouvrir dans Google Maps (Itinéraire)
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Triple M Car. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
