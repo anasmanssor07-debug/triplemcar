@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Véhicule - Triple M Car</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <header class="top-contact-bar">
+        <div class="contact-info">
+            <span>✉️ Email : <a href="mailto:triplemcar@gmail.com">triplemcar@gmail.com</a></span>
+            <span>📞 Tél : <a href="tel:0662530124">06 62 53 01 24</a> | <a href="tel:0524887368">05 24 88 73 68</a></span>
+        </div>
+    </header>
+
+    <section class="details-page">
+        <a href="index.html#catalogue" class="btn-back">⬅ Retour aux voitures</a>
+        
+        <div class="details-container">
+            <div class="details-image">
+                <img src="" alt="Photo véhicule" id="details-img">
+            </div>
+
+            <div class="details-content">
+                <h2 id="details-title">Nom de la voiture</h2>
+                <div class="details-price" id="details-price">Prix</div>
+
+                <div class="details-grid">
+                    <div class="info-box">
+                        <h3>Fiche Technique</h3>
+                        <ul>
+                            <li><strong>Boîte de vitesse :</strong> Manuelle</li>
+                            <li><strong>Carburant :</strong> Diesel</li>
+                            <li><strong>Air conditionné :</strong> Oui</li>
+                            <li><strong>Portes :</strong> 5</li>
+                            <li><strong>Places :</strong> 5</li>
+                            <li><strong>Valises :</strong> 5</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Le prix inclut :</h3>
+                        <ul class="includes-list">
+                            <li>✅ Kilométrage illimité</li>
+                            <li>✅ Deuxième conducteur gratuit</li>
+                            <li>✅ Livraison gratuite à la région de Ouarzazate</li>
+                            <li>✅ Assistance 24/7</li>
+                            <li>✅ TVA incluse</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="date-picker-box date-picker-detail">
+                    <label>Du :</label>
+                    <input type="date" id="detail-start">
+                    <label>Au :</label>
+                    <input type="date" id="detail-end">
+                </div>
+
+                <button class="btn-whatsapp btn-large" id="details-reserve-btn">Réserver directement sur WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Triple M Car. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        const monNumeroWhatsApp = "212662530124"; 
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const voiture = urlParams.get('voiture') || 'Véhicule';
+        const prix = urlParams.get('prix') || '';
+        const img = urlParams.get('img') || 'DaciaSandero.jpg';
+
+        document.getElementById('details-title').innerText = voiture;
+        document.getElementById('details-price').innerText = "Prix : " + prix + " / jour";
+        document.getElementById('details-img').src = img;
+        document.getElementById('details-img').alt = voiture;
+
+        document.getElementById('details-reserve-btn').onclick = function() {
+            const dateDebut = document.getElementById('detail-start').value;
+            const dateFin = document.getElementById('detail-end').value;
+
+            if (!dateDebut || !dateFin) {
+                alert("Veuillez choisir la date de début et la date de fin de location.");
+                return;
+            }
+
+            const message = `Bonjour Triple M Car, je souhaite réserver la voiture *${voiture}* (${prix}/jour) du *${dateDebut}* au *${dateFin}*. Est-elle disponible ?`;
+            const whatsappUrl = `https://wa.me/${monNumeroWhatsApp}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        };
+    </script>
+</body>
+</html>
